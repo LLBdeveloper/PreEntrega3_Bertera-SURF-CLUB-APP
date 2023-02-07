@@ -1,0 +1,48 @@
+/* GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*     ETIQUETAS      */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: monospace;
+    background-color: grey;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+div {
+    text-align: center;
+    margin: 20px;
+    
+}
+
+a {
+    font-size: 30px;
+    text-decoration: line-through;
+    color: rgb(108, 5, 134);
+}
+
+h1 {
+    margin: 1.5rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+p {
+    margin: 0rem 3rem 4rem 3rem;
+    text-align: center;
+    font-size: 2rem;
+    
+}
