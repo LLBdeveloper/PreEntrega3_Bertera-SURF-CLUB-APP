@@ -135,7 +135,7 @@
     <div class="appkite" id="personalizada">
         <p class="appkite_titulo">¡Personaliza TU tabla a TU gusto!</p>
         <p class="appkite_descri">Podes tener la tabla que siempre quisiste, entra a nuestro personalizador de tablas </p>
-        <button id="agregarLibro" data-bs-toggle="modal" data-bs-target="#idModalAgregarLibro" class="p-5 btn btn-secondary btn-lg btn-block">INICIAR PERSONALIZACION</button>
+        <button id="" data-bs-toggle="modal" data-bs-target="#idModalAgregarLibro" class="p-5 btn btn-secondary btn-lg btn-block">INICIAR PERSONALIZACION</button>
     </div>
     <!--Modals-->
     <div class="modal fade" id="idModalAgregarLibro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -184,17 +184,31 @@
                     <input type="text" id="Dire E-Mail" name="Dire E-Mail" placeholder="Ingresa tu E-Mail"/>
                 </div>
                 <div class=" m-3" >
-                    <input type="submit" value="Enviar" class=" p-1" />
+                    <!-- <input type="submit" value="Enviar" class=" p-1" /> -->
+                    <!-- boton formu modal  -->
+                    <button id="btnSubmit" type="submit" value="Enviar" data-bs-toggle="modal" data-bs-target="#idModalFormulario" class="p-1 btn btn-secondary btn-lg btn-block">Enviar</button>
                     <input type="reset" value="Limpiar Formulario" class=" p-1">
                 </div>
             </fieldset>
         </form>
     </section>
 
+<!-- modal formulario  -->
+    <div class="modal fade" id="idModalFormulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <p class="h3 text-center m-5">Gracias por su contacto, en la brevedad nos comunicaremos por E-Mail.</p>
+                <img src="assets/shortcut.jpg" style="width: 15rem;" class="mx-auto" alt="">
+                <p class="h4 text-center text-muted m-5">Formulario enviado.</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+
 <!-- footer  -->
     <div class="container">
         <footer class="py-5">
-            
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p class="letraclara">© 2022 Company, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">

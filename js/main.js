@@ -130,7 +130,7 @@ function cargarProductosCarrito(array){
     array.forEach((productoEnCarrito) => {
 
         modalBodyCarrito.innerHTML += `
-        <div class="card border-primary mb-3" id ="productoCarrito${productoEnCarrito.id}" style="max-width: 540px;">
+            <div class="card border-primary mb-3" id ="productoCarrito${productoEnCarrito.id}" style="max-width: 540px;">
                 <img class="card-img-top" height="300px" src="assets/${productoEnCarrito.imagen}" alt="">
                 <div class="card-body">
                     <h4 class="card-title">${productoEnCarrito.nombre}</h4>
@@ -149,11 +149,6 @@ function borrarUltimoProducto (){
     tablas.pop()
     localStorage.setItem("tablas", JSON.stringify(tablas))
 }
-
-
-/////
-//formulario
-//enviar formulario o consulta
 
 
 ////////////////////
@@ -181,7 +176,7 @@ buscador.addEventListener("input", ()=>{
 miFormulario.addEventListener("submit", validarFormulario);
     function validarFormulario(e){
         e.preventDefault();
-        alert("Formulario Enviado");
+        // alert("Formulario Enviado");
 }
 
 selectOrden.addEventListener("change",()=>{
@@ -195,11 +190,3 @@ selectOrden.addEventListener("change",()=>{
     }else{mostrarCatalogo(tablas)
     }
 })
-
-
-
-
-
-
-
-
